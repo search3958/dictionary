@@ -5,19 +5,21 @@
 
 
 <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
+
+
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-<title>HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説</title>
-<meta name="description" content="HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。">
+<title>HTML &lt;rp&gt; 要素リファレンス | ルビの括弧要素の使い方を解説</title>
+<meta name="description" content="HTMLの&lt;rp&gt; (ルビの括弧) 要素の完全リファレンス。&lt;ruby&gt;要素内で&lt;rt&gt;をサポートしないブラウザ向けに、ルビテキストを括弧で囲むための要素です。具体的な使い方をコードサンプル付きで詳解します。">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-<meta property="og:title" content="HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説">
-<meta property="og:description" content="HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。">
+<meta property="og:title" content="HTML &lt;rp&gt; 要素リファレンス | ルビの括弧要素の使い方を解説">
+<meta property="og:description" content="HTMLの&lt;rp&gt; (ルビの括弧) 要素の完全リファレンス。&lt;ruby&gt;要素内で&lt;rt&gt;をサポートしないブラウザ向けに、ルビテキストを括弧で囲むための要素です。具体的な使い方をコードサンプル付きで詳解します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://search3958.github.io/dictionary/html/address.html">
-<meta property="og:image" content="https://search3958.github.io/images/address-tag-ogp.png">
+<meta property="og:url" content="https://search3958.github.io/dictionary/html/rp.html">
+<meta property="og:image" content="https://search3958.github.io/images/rp-tag-ogp.png">
 <meta property="og:site_name" content="HTML要素 辞書">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -30,7 +32,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <style amp-custom>
- :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
+ :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
  </style>
 </head>
 <body>
@@ -39,8 +41,8 @@
 {
  "@context": "https://schema.org",
  "@type": "TechArticle",
- "headline": "HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説",
- "image": "https://search3958.github.io/images/address-tag-hero.png",
+ "headline": "HTML &lt;rp&gt; 要素リファレンス | ルビの括弧要素の使い方を解説",
+ "image": "https://search3958.github.io/images/rp-tag-hero.png",
  "author": {
 "@type": "Person",
 "name": "Search3958"
@@ -56,7 +58,7 @@
  "datePublished": "2025-12-14",
  "dateModified": "2025-12-14",
  "articleSection": ["HTML要素", "リファレンス"],
- "description": "HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。"
+ "description": "HTMLの&lt;rp&gt; (ルビの括弧) 要素の完全リファレンス。&lt;ruby&gt;要素内で&lt;rt&gt;をサポートしないブラウザ向けに、ルビテキストを括弧で囲むための要素です。具体的な使い方をコードサンプル付きで詳解します。"
 }
 </script>
 
@@ -67,7 +69,7 @@
 <ul>
 <li><a href="https://search3958.github.io/dictionary/html/a.html">&lt;a&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/abbr.html">&lt;abbr&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/address.html" class="current">&lt;address&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/address.html">&lt;address&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/area.html">&lt;area&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/article.html">&lt;article&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/aside.html">&lt;aside&gt;</a></li>
@@ -110,7 +112,7 @@
 <li><a href="https://search3958.github.io/dictionary/html/hr.html">&lt;hr&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/html.html">&lt;html&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/i.html">&lt;i&gt;</a></li>
-<li><a href="https3958.github.io/dictionary/html/iframe.html">&lt;iframe&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/iframe.html">&lt;iframe&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/img.html">&lt;img&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/input.html">&lt;input&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/ins.html">&lt;ins&gt;</a></li>
@@ -137,7 +139,7 @@
 <li><a href="https://search3958.github.io/dictionary/html/pre.html">&lt;pre&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/progress.html">&lt;progress&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/q.html">&lt;q&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/rp.html">&lt;rp&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/rp.html" class="current">&lt;rp&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/rt.html">&lt;rt&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/ruby.html">&lt;ruby&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/s.html">&lt;s&gt;</a></li>
@@ -181,10 +183,10 @@
 <header>
 <span class="eyebrow">HTML要素 辞書 by Sentaro</span>
 <h1>
-&lt;address&gt;
+&lt;rp&gt;
 </h1>
 <p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
-連絡先情報（Address）要素。最も近い <code>&lt;article&gt;</code> または <code>&lt;body&gt;</code> 要素の作者や編集者、ドキュメント管理者などの連絡先情報を提供します。
+ルビ括弧（Ruby Fallback Parenthesis）要素。ルビをサポートしないブラウザのための代替要素です。
 </p>
 </header>
 
@@ -194,9 +196,8 @@
 <h2>概要</h2>
 </div>
 <p>
-<code>&lt;address&gt;</code> 要素は、そのコンテンツが提供するHTMLドキュメントまたは <code>&lt;article&gt;</code> 要素の作者、管理者、または編集者に関する**連絡先情報**を定義します。<br>
-<br>
-これは、物理的な住所を示すためだけの要素ではありません。電子メールアドレス、URL、電話番号、ソーシャルメディアのハンドルネームなど、連絡を取るための情報を含めることができます。
+<code>&lt;rp&gt;</code> 要素は、ルビ注釈（<code>&lt;rt&gt;</code>要素）をサポートしていないブラウザに対して、ルビテキストを括弧で囲んで表示するための要素です。<br>
+<code>&lt;ruby&gt;</code>要素の子要素として、ルビテキストの前後（<code>&lt;rt&gt;</code>要素の前後に）に記述します。最新のブラウザの多くは<code>&lt;rt&gt;</code>を直接サポートしているため、通常は<code>&lt;rp&gt;</code>の内容は非表示になります。
 </p>
 </div>
 
@@ -210,23 +211,33 @@
 <div class="editor-pane">
 <div class="pane-label">HTML (Source)</div>
 <div class="static-code-display">
-&lt;footer&gt;
- &lt;address&gt;
-  著者: &lt;a href="mailto:author@example.com"&gt;山田 太郎&lt;/a&gt;.
-  &lt;br&gt;
-  最終更新: &lt;time datetime="2025-12-14"&gt;2025年12月14日&lt;/time&gt;
- &lt;/address&gt;
-&lt;/footer&gt;
+&lt;!-- 最新ブラウザでは「漢(かん)字(じ)」と表示 --&gt;
+&lt;ruby&gt;
+ 漢&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;かん&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+ 字&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;じ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- &lt;rt&gt;をサポートしない古いブラウザでの表示例 --&gt;
+&lt;div style="font-size: 1.2rem; border: 1px dashed gray; padding: 8px;"&gt;
+ 漢字(かん)字(じ) 
+&lt;/div&gt;
 </div>
 </div>
 <div class="preview-pane">
 <div class="pane-label">Preview (Result)</div>
 <div class="static-preview">
-<footer style="font-style: italic;">
- 著者: <a href="mailto:author@example.com">山田 太郎</a>.
- <br>
- 最終更新: 2025年12月14日
-</footer>
+<ruby>
+ 漢<rp>(</rp><rt>かん</rt><rp>)</rp>
+ 字<rp>(</rp><rt>じ</rt><rp>)</rp>
+</ruby>
+
+<br><br>
+
+<div style="font-size: 1.2rem; border: 1px dashed gray; padding: 8px;">
+ 漢字(かん)字(じ) 
+</div>
 </div>
 </div>
 </div>
@@ -247,7 +258,7 @@
 <tbody>
 <tr>
 <td><span class="attr-name">グローバル属性</span></td>
-<td>全てのHTML要素で利用可能な属性です（例: <code>class</code>, <code>id</code>, <code>lang</code>）。</td>
+<td>全てのHTML要素で使用できるグローバル属性のみが適用可能です。独自の属性はありません。</td>
 </tr>
 </tbody>
 </table>
@@ -259,43 +270,24 @@
 <h2>実用例</h2>
 </div>
 
-<p><strong>1. 記事の作者情報として使用する</strong></p>
+<p><strong>1. 標準的なルビの記述</strong></p>
 <div class="code-block">
-&lt;<span class="code-tag">article</span>&gt;
- &lt;<span class="code-tag">h2</span>&gt;最新のWeb技術動向&lt;/<span class="code-tag">h2</span>&gt;
- &lt;<span class="code-tag">p</span>&gt;... 記事本文 ...&lt;/<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">footer</span>&gt;
-  &lt;<span class="code-tag">address</span>&gt;
-   この記事は &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"/authors/jsmith"</span>&gt;John Smith&lt;/<span class="code-tag">a</span>&gt; によって書かれました。
-   &lt;<span class="code-tag">br</span>&gt;
-   連絡先: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"mailto:j.smith@webdev.com"</span>&gt;j.smith@webdev.com&lt;/<span class="code-tag">a</span>&gt;
-  &lt;/<span class="code-tag">address</span>&gt;
- &lt;/<span class="code-tag">footer</span>&gt;
-&lt;/<span class="code-tag">article</span>&gt;
+&lt;<span class="code-tag">p</span>&gt;
+ &lt;<span class="code-tag">ruby</span>&gt;
+  故<span class="code-tag">字</span>&lt;<span class="code-tag">rp</span>&gt;(&lt;/<span class="code-tag">rp</span>&gt;&lt;<span class="code-tag">rt</span>&gt;ふる&lt;/<span class="code-tag">rt</span>&gt;&lt;<span class="code-tag">rp</span>&gt;)&lt;/<span class="code-tag">rp</span>&gt;
+  &lt;span&gt;郷&lt;/<span class="code-tag">span</span>&gt;&lt;<span class="code-tag">rp</span>&gt;(&lt;/<span class="code-tag">rp</span>&gt;&lt;<span class="code-tag">rt</span>&gt;さと&lt;/<span class="code-tag">rt</span>&gt;&lt;<span class="code-tag">rp</span>&gt;)&lt;/<span class="code-tag">rp</span>&gt;
+ &lt;/<span class="code-tag">ruby</span>&gt;
+&lt;/<span class="code-tag">p</span>&gt;
 </div>
+<p style="margin-top: 10px;">（<code>&lt;rt&gt;</code>をサポートするブラウザでは「故郷(ふるさと)」、非サポートブラウザでは「故郷(ふるさと)」のように表示されます。）</p>
 
-<p><strong>2. サイト全体のフッターで連絡先を示す</strong></p>
+<p><strong>2. 複数文字に対するルビ</strong></p>
 <div class="code-block">
-&lt;<span class="code-tag">footer</span>&gt;
- &lt;<span class="code-tag">p</span>&gt;&copy; 2025 HTML要素 辞書&lt;/<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">address</span>&gt;
-  管理者連絡先: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"/contact-us/"</span>&gt;お問い合わせフォーム&lt;/<span class="code-tag">a</span>&gt;
-  &lt;<span class="code-tag">br</span>&gt;
-  電話番号: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"tel:0120-123-456"</span>&gt;0120-123-456&lt;/<span class="code-tag">a</span>&gt;
- &lt;/<span class="code-tag">address</span>&gt;
-&lt;/<span class="code-tag">footer</span>&gt;
-</div>
-
-<p><strong>3. 誤った使い方（物理的な住所のみを示す場合）</strong></p>
-<div class="code-block">
-<span class="code-comment">&lt;!-- &lt;address&gt;の誤った使用例 --&gt;</span>
-&lt;<span class="code-tag">section</span>&gt;
- &lt;<span class="code-tag">h3</span>&gt;店舗情報&lt;/<span class="code-tag">h3</span>&gt;
- &lt;<span class="code-tag">address</span>&gt;
-  〒100-0001 東京都千代田区千代田 1-1-1
- &lt;/<span class="code-tag">address</span>&gt;
-<span class="code-comment">&lt;!-- ⬆️ この場合、単なる &lt;p&gt; や &lt;div&gt; を使用し、構造化データでマークアップするのが適切です --&gt;</span>
-&lt;/<span class="code-tag">section</span>&gt;
+&lt;<span class="code-tag">p</span>&gt;
+ &lt;<span class="code-tag">ruby</span>&gt;
+  春望&lt;<span class="code-tag">rp</span>&gt;(&lt;/<span class="code-tag">rp</span>&gt;&lt;<span class="code-tag">rt</span>&gt;しゅんぼう&lt;/<span class="code-tag">rt</span>&gt;&lt;<span class="code-tag">rp</span>&gt;)&lt;/<span class="code-tag">rp</span>&gt;
+ &lt;/<span class="code-tag">ruby</span>&gt;
+&lt;/<span class="code-tag">p</span>&gt;
 </div>
 </div>
 
@@ -306,18 +298,18 @@
 </div>
 
 <div class="note">
-<span class="material-symbols-outlined">info</span>
+<span class="material-symbols-outlined">browser_not_supported</span>
 <div>
-<strong>セマンティクス（意味）の理解</strong><br>
-<code>&lt;address&gt;</code> 要素は、その内容（記事やドキュメント全体）の**所有者/作者/管理者**の連絡先を示すために使用されます。企業の物理的な住所や商品の配送先住所など、**文書の内容と関連のない連絡先**を示すためには使用しないでください。
+<strong>&lt;rp&gt;の役割</strong><br>
+現代の主要なブラウザは全て<code>&lt;rt&gt;</code>要素を正しく解釈し、ルビを自動で括弧なしで表示します。そのため、通常<code>&lt;rp&gt;</code>要素の中身は無視され、画面には表示されません。<code>&lt;rp&gt;</code>は**古いブラウザ向け**のフォールバック（代替表示）のための要素であると理解してください。
 </div>
 </div>
 
 <div class="note accessibility">
-<span class="material-symbols-outlined">visibility</span>
+<span class="material-symbols-outlined">accessibility_new</span>
 <div>
-<strong>ブラウザによる既定のスタイル</strong><br>
-多くのブラウザでは、<code>&lt;address&gt;</code> 要素の内容を既定で*斜体*（イタリック体）で表示します。このスタイルはCSSで上書きすることが可能です。
+<strong>アクセシビリティ</strong><br>
+<code>&lt;ruby&gt;</code>、<code>&lt;rt&gt;</code>、<code>&lt;rp&gt;</code>のセットは、東アジア言語の文字に読み方（ルビ）を提供するために重要です。スクリーンリーダーなどの支援技術は、これらの要素構造を利用して適切な読み上げを行います。セマンティクスを正しく保つため、ルビが必要な箇所には必ず<code>&lt;ruby&gt;</code>構造を使用しましょう。
 </div>
 </div>
 </div>
@@ -334,7 +326,7 @@ gap:16px;">
 </div>
 
 <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-6151036058675874">
+    data-ad-client="ca-pub-6151036058675874">
 </amp-auto-ads>
 </body>
 </html>

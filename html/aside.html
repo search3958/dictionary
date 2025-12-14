@@ -1,0 +1,356 @@
+<!doctype html>
+<html ⚡ lang="ja">
+<head>
+<meta charset="UTF-8">
+
+
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<title>HTML &lt;aside&gt; 要素リファレンス | 補足コンテンツ(Aside)タグの使い方を解説</title>
+<meta name="description" content="HTMLの&lt;aside&gt; (アサイド) 要素の完全リファレンス。主要コンテンツの補足情報や関連コンテンツを示すために使用されます。具体的な使い方をコードサンプル付きで詳解します。">
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<meta property="og:title" content="HTML &lt;aside&gt; 要素リファレンス | 補足コンテンツ(Aside)タグの使い方を解説">
+<meta property="og:description" content="HTMLの&lt;aside&gt; (アサイド) 要素の完全リファレンス。主要コンテンツの補足情報や関連コンテンツを示すために使用されます。具体的な使い方をコードサンプル付きで詳解します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://search3958.github.io/dictionary/aside.html">
+<meta property="og:image" content="https://search3958.github.io/images/aside-tag-ogp.png">
+<meta property="og:site_name" content="HTML要素 辞書">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Google+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<style amp-custom>
+ :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
+ </style>
+</head>
+<body>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "TechArticle",
+ "headline": "HTML &lt;aside&gt; 要素リファレンス | 補足コンテンツ(Aside)タグの使い方を解説",
+ "image": "https://search3958.github.io/images/aside-tag-hero.png",
+ "author": {
+"@type": "Person",
+"name": "Search3958"
+ },
+ "publisher": {
+"@type": "Organization",
+"name": "HTML要素 辞書",
+"logo": {
+ "@type": "ImageObject",
+ "url": "https://search3958.github.io/icons/search3958.svg"
+}
+ },
+ "datePublished": "2025-12-14",
+ "dateModified": "2025-12-14",
+ "articleSection": ["HTML要素", "リファレンス"],
+ "description": "HTMLの&lt;aside&gt; (アサイド) 要素の完全リファレンス。主要コンテンツの補足情報や関連コンテンツを示すために使用されます。具体的な使い方をコードサンプル付きで詳解します。"
+}
+</script>
+
+<div class="main-content-wrapper">
+
+<aside class="sidebar">
+<h3 style="margin-top:0;">辞書一覧</h3>
+<ul>
+<li><a href="https://search3958.github.io/dictionary/a.html" >&lt;a&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/abbr.html">&lt;abbr&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/address.html">&lt;address&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/area.html">&lt;area&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/article.html">&lt;article&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/aside.html" class="current">&lt;aside&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/audio.html">&lt;audio&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/b.html">&lt;b&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/base.html">&lt;base&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/bdi.html">&lt;bdi&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/bdo.html">&lt;bdo&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/blockquote.html">&lt;blockquote&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/body.html">&lt;body&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/br.html">&lt;br&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/button.html">&lt;button&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/canvas.html">&lt;canvas&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/caption.html">&lt;caption&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/cite.html">&lt;cite&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/code.html">&lt;code&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/col.html">&lt;col&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/colgroup.html">&lt;colgroup&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/data.html">&lt;data&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/datalist.html">&lt;datalist&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/dd.html">&lt;dd&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/del.html">&lt;del&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/details.html">&lt;details&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/dfn.html">&lt;dfn&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/dialog.html">&lt;dialog&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/div.html">&lt;div&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/dl.html">&lt;dl&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/dt.html">&lt;dt&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/em.html">&lt;em&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/embed.html">&lt;embed&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/fieldset.html">&lt;fieldset&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/figcaption.html">&lt;figcaption&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/figure.html">&lt;figure&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/footer.html">&lt;footer&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/form.html">&lt;form&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/h1.html">&lt;h1&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/head.html">&lt;head&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/header.html">&lt;header&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/hgroup.html">&lt;hgroup&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/hr.html">&lt;hr&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html.html">&lt;html&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/i.html">&lt;i&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/iframe.html">&lt;iframe&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/img.html">&lt;img&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/input.html">&lt;input&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/ins.html">&lt;ins&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/kbd.html">&lt;kbd&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/label.html">&lt;label&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/legend.html">&lt;legend&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/li.html">&lt;li&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/link.html">&lt;link&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/main.html">&lt;main&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/map.html">&lt;map&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/mark.html">&lt;mark&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/menu.html">&lt;menu&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/meta.html">&lt;meta&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/meter.html">&lt;meter&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/nav.html">&lt;nav&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/noscript.html">&lt;noscript&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/object.html">&lt;object&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/ol.html">&lt;ol&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/optgroup.html">&lt;optgroup&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/option.html">&lt;option&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/output.html">&lt;output&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/p.html">&lt;p&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/picture.html">&lt;picture&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/pre.html">&lt;pre&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/progress.html">&lt;progress&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/q.html">&lt;q&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/rp.html">&lt;rp&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/rt.html">&lt;rt&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/ruby.html">&lt;ruby&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/s.html">&lt;s&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/samp.html">&lt;samp&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/script.html">&lt;script&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/search.html">&lt;search&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/section.html">&lt;section&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/select.html">&lt;select&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/slot.html">&lt;slot&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/small.html">&lt;small&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/source.html">&lt;source&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/span.html">&lt;span&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/strong.html">&lt;strong&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/style.html">&lt;style&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/sub.html">&lt;sub&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/summary.html">&lt;summary&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/sup.html">&lt;sup&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/table.html">&lt;table&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/tbody.html">&lt;tbody&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/td.html">&lt;td&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/template.html">&lt;template&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/textarea.html">&lt;textarea&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/tfoot.html">&lt;tfoot&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/th.html">&lt;th&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/thead.html">&lt;thead&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/time.html">&lt;time&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/title.html">&lt;title&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/tr.html">&lt;tr&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/track.html">&lt;track&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/u.html">&lt;u&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/ul.html">&lt;ul&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/var.html">&lt;var&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/video.html">&lt;video&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/wbr.html">&lt;wbr&gt;</a></li>
+</ul>
+</aside>
+
+<div class="container">
+
+<a class="last-a" href="https://search3958.github.io/dictionary/html/">HTML辞書ホームへ</a>
+<header>
+<span class="eyebrow">HTML要素 辞書 by Sentaro</span>
+<h1>
+&lt;aside&gt;
+</h1>
+<p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
+アサイド（Aside）要素。主要コンテンツと間接的に関連するが、独立した補足的なコンテンツを表します。
+</p>
+</header>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">info</span>
+<h2>概要</h2>
+</div>
+<p>
+<code>&lt;aside&gt;</code> 要素は、ドキュメントの主要コンテンツとは別に存在するコンテンツを表します。これは、主要コンテンツの補足情報、用語解説、関連リンク、広告、著者の略歴など、主要コンテンツがなくても理解できる独立したコンテンツに使用されます。<br>
+一般的に、サイドバーとしてレイアウトされることが多い要素です。
+</p>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">play_circle</span>
+<h2>デモ (静的表示)</h2>
+</div>
+
+<div class="demo-container">
+<div class="editor-pane">
+<div class="pane-label">HTML (Source)</div>
+<div class="static-code-display">
+&lt;article&gt;
+ &lt;h2&gt;主要記事のタイトル&lt;/h2&gt;
+ &lt;p&gt;記事の主要な内容がここにあります...&lt;/p&gt;
+ 
+ &lt;aside&gt;
+  &lt;h3&gt;この記事の補足情報&lt;/h3&gt;
+  &lt;ul&gt;
+   &lt;li&gt;&lt;a href="#"&gt;関連資料へのリンク&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;著者の簡単な紹介&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/aside&gt;
+&lt;/article&gt;
+</div>
+</div>
+<div class="preview-pane">
+<div class="pane-label">Preview (Result)</div>
+<div class="static-preview">
+<article>
+ <h2>主要記事のタイトル</h2>
+ <p>記事の主要な内容がここにあります...</p>
+ 
+ <aside style="border: 1px solid #ccc; padding: 8px; margin-top: 10px;">
+  <h3>この記事の補足情報</h3>
+  <ul>
+   <li><a href="#">関連資料へのリンク</a></li>
+   <li>著者の簡単な紹介</li>
+  </ul>
+ </aside>
+</article>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">list</span>
+<h2>属性 (Attributes)</h2>
+</div>
+<table>
+<thead>
+<tr>
+<th style="width: 30%;">属性名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="attr-name">グローバル属性</span></td>
+<td>全てのHTML要素で使用可能な<a href="https://search3958.github.io/dictionary/global-attributes.html">グローバル属性</a>のみをサポートします。固有の属性はありません。</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">code</span>
+<h2>実用例</h2>
+</div>
+
+<p><strong>1. 主要コンテンツの関連情報としての使用</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">main</span>&gt;
+ &lt;<span class="code-tag">p</span>&gt;メインの記事の内容...&lt;/<span class="code-tag">p</span>&gt;
+ 
+ &lt;<span class="code-tag">aside</span>&gt;
+  &lt;<span class="code-tag">h3</span>&gt;関連コンテンツ&lt;/<span class="code-tag">h3</span>&gt;
+  &lt;<span class="code-tag">ul</span>&gt;
+   &lt;<span class="code-tag">li</span>&gt;別の記事へのリンク&lt;/<span class="code-tag">li</span>&gt;
+  &lt;/<span class="code-tag">ul</span>&gt;
+ &lt;/<span class="code-tag">aside</span>&gt;
+&lt;/<span class="code-tag">main</span>&gt;
+</div>
+
+<p><strong>2. 広告ブロックとしての使用</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">article</span>&gt;
+ &lt;<span class="code-tag">h1</span>&gt;ブログ記事&lt;/<span class="code-tag">h1</span>&gt;
+ &lt;<span class="code-tag">p</span>&gt;...&lt;/<span class="code-tag">p</span>&gt;
+&lt;/<span class="code-tag">article</span>&gt;
+
+&lt;<span class="code-tag">aside</span> <span class="code-attr">class</span>=<span class="code-val">"ad-container"</span>&gt;
+ &lt;<span class="code-tag">p</span>&gt;広告エリア&lt;/<span class="code-tag">p</span>&gt;
+ &lt;<span class="code-tag">img</span> <span class="code-attr">src</span>=<span class="code-val">"ad.png"</span> <span class="code-attr">alt</span>=<span class="code-val">"広告バナー"</span>&gt;
+&lt;/<span class="code-tag">aside</span>&gt;
+</div>
+
+<p><strong>3. ページ全体のサイドバーとしての使用</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">body</span>&gt;
+ &lt;<span class="code-tag">main</span>&gt;...&lt;/<span class="code-tag">main</span>&gt;
+ 
+ &lt;<span class="code-tag">aside</span> <span class="code-attr">role</span>=<span class="code-val">"complementary"</span>&gt;
+  &lt;<span class="code-tag">h2</span>&gt;サイトナビゲーション&lt;/<span class="code-tag">h2</span>&gt;
+  &lt;<span class="code-tag">nav</span>&gt;
+   &lt;<span class="code-tag">ul</span>&gt;
+    &lt;<span class="code-tag">li</span>&gt;ホーム&lt;/<span class="code-tag">li</span>&gt;
+    &lt;<span class="code-tag">li</span>&gt;about&lt;/<span class="code-tag">li</span>&gt;
+   &lt;/<span class="code-tag">ul</span>&gt;
+  &lt;/<span class="code-tag">nav</span>&gt;
+ &lt;/<span class="code-tag">aside</span>&gt;
+&lt;/<span class="code-tag">body</span>&gt;
+</div>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">lightbulb</span>
+<h2>知っておくべき重要事項</h2>
+</div>
+
+<div class="note">
+<span class="material-symbols-outlined">segment</span>
+<div>
+<strong>セマンティクス（意味）</strong><br>
+<code>&lt;aside&gt;</code> は、主要コンテンツから独立した補足情報のために存在します。単なるサイドバーのレイアウトのために使うべきではありません。例えば、ナビゲーションメニュー（サイト全体に関わるもの）は、<a href="https://search3958.github.io/dictionary/nav.html"><code>&lt;nav&gt;</code></a>要素の使用がより適切です。
+</div>
+</div>
+
+<div class="note accessibility">
+<span class="material-symbols-outlined">accessibility_new</span>
+<div>
+<strong>アクセシビリティ</strong><br>
+多くのブラウザやスクリーンリーダーは、<code>&lt;aside&gt;</code>要素をランドマークロールの <code>complementary</code>（補足）として扱います。これにより、利用者が主要コンテンツと補足コンテンツを区別しやすくなります。
+</div>
+</div>
+</div>
+<div style="
+display: flex;
+align-items: center;
+gap:16px;">
+<img width="48px" src="https://search3958.github.io/icons/search3958.svg">
+<a class="last-a" href="https://search3958.gitub.io">私について</a>
+<a class="last-a" href="https://search3958.github.io/policies/trems">利用規約</a>
+<a class="last-a" href="https://search3958.github.io/policies/privacy">プライバシーポリシー</a>
+</div>
+</div>
+</div>
+
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-6151036058675874">
+</amp-auto-ads>
+</body>
+</html>

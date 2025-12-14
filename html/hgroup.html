@@ -5,19 +5,21 @@
 
 
 <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
+
+
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-<title>HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説</title>
-<meta name="description" content="HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。">
+<title>HTML &lt;hgroup&gt; 要素リファレンス | 見出しグループタグの使い方、目的を解説</title>
+<meta name="description" content="HTMLの&lt;hgroup&gt; (見出しグループ) 要素の完全リファレンス。主要な見出しと副次的な見出しをグループ化する目的と具体的な使い方をコードサンプル付きで詳解します。">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-<meta property="og:title" content="HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説">
-<meta property="og:description" content="HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。">
+<meta property="og:title" content="HTML &lt;hgroup&gt; 要素リファレンス | 見出しグループタグの使い方、目的を解説">
+<meta property="og:description" content="HTMLの&lt;hgroup&gt; (見出しグループ) 要素の完全リファレンス。主要な見出しと副次的な見出しをグループ化する目的と具体的な使い方をコードサンプル付きで詳解します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://search3958.github.io/dictionary/html/address.html">
-<meta property="og:image" content="https://search3958.github.io/images/address-tag-ogp.png">
+<meta property="og:url" content="https://search3958.github.io/dictionary/html/hgroup.html">
+<meta property="og:image" content="https://search3958.github.io/images/hgroup-tag-ogp.png">
 <meta property="og:site_name" content="HTML要素 辞書">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -30,7 +32,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <style amp-custom>
- :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
+ :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}.static-preview h1, .static-preview h2, .static-preview p {margin: 0;}.static-preview h1 {font-size: 1.5em;}.static-preview h2 {font-size: 1.2em;}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
  </style>
 </head>
 <body>
@@ -39,8 +41,8 @@
 {
  "@context": "https://schema.org",
  "@type": "TechArticle",
- "headline": "HTML &lt;address&gt; 要素リファレンス | 連絡先情報(Address)タグの使い方を解説",
- "image": "https://search3958.github.io/images/address-tag-hero.png",
+ "headline": "HTML &lt;hgroup&gt; 要素リファレンス | 見出しグループタグの使い方、目的を解説",
+ "image": "https://search3958.github.io/images/hgroup-tag-hero.png",
  "author": {
 "@type": "Person",
 "name": "Search3958"
@@ -56,18 +58,18 @@
  "datePublished": "2025-12-14",
  "dateModified": "2025-12-14",
  "articleSection": ["HTML要素", "リファレンス"],
- "description": "HTMLの&lt;address&gt; 要素の完全リファレンス。直近の &lt;article&gt; や &lt;body&gt; の作者/編集者/連絡先情報を定義します。具体的な使い方をコードサンプル付きで詳解します。"
+ "description": "HTMLの&lt;hgroup&gt; (見出しグループ) 要素の完全リファレンス。主要な見出しと副次的な見出しをグループ化する目的と具体的な使い方をコードサンプル付きで詳解します。"
 }
 </script>
 
 <div class="main-content-wrapper">
 
 <aside class="sidebar">
-<h3>HTML要素一覧</h3>
+<h3 style="margin-top:0;">辞書一覧</h3>
 <ul>
 <li><a href="https://search3958.github.io/dictionary/html/a.html">&lt;a&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/abbr.html">&lt;abbr&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/address.html" class="current">&lt;address&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/address.html">&lt;address&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/area.html">&lt;area&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/article.html">&lt;article&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/aside.html">&lt;aside&gt;</a></li>
@@ -106,11 +108,11 @@
 <li><a href="https://search3958.github.io/dictionary/html/h1.html">&lt;h1&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/head.html">&lt;head&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/header.html">&lt;header&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/hgroup.html">&lt;hgroup&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/hgroup.html" class="current">&lt;hgroup&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/hr.html">&lt;hr&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/html.html">&lt;html&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/i.html">&lt;i&gt;</a></li>
-<li><a href="https3958.github.io/dictionary/html/iframe.html">&lt;iframe&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/iframe.html">&lt;iframe&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/img.html">&lt;img&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/input.html">&lt;input&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/ins.html">&lt;ins&gt;</a></li>
@@ -181,10 +183,10 @@
 <header>
 <span class="eyebrow">HTML要素 辞書 by Sentaro</span>
 <h1>
-&lt;address&gt;
+&lt;hgroup&gt;
 </h1>
 <p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
-連絡先情報（Address）要素。最も近い <code>&lt;article&gt;</code> または <code>&lt;body&gt;</code> 要素の作者や編集者、ドキュメント管理者などの連絡先情報を提供します。
+見出しグループ要素。主要な見出しと、副題やキャッチフレーズなどの副次的な見出しをグループ化します。
 </p>
 </header>
 
@@ -194,9 +196,8 @@
 <h2>概要</h2>
 </div>
 <p>
-<code>&lt;address&gt;</code> 要素は、そのコンテンツが提供するHTMLドキュメントまたは <code>&lt;article&gt;</code> 要素の作者、管理者、または編集者に関する**連絡先情報**を定義します。<br>
-<br>
-これは、物理的な住所を示すためだけの要素ではありません。電子メールアドレス、URL、電話番号、ソーシャルメディアのハンドルネームなど、連絡を取るための情報を含めることができます。
+<code>&lt;hgroup&gt;</code> 要素（見出しグループ要素）は、複数の見出し要素（<code>&lt;h1&gt;</code>〜<code>&lt;h6&gt;</code>）を一つのグループとしてまとめ、主要な見出しを強調するために使用されます。<br>
+この要素を使用することで、アウトラインアルゴリズム（現在は非推奨）において、**グループ内の最もランクの高い見出し（例: <code>&lt;h1&gt;</code>）のみが文書のアウトラインに貢献**し、それ以外の副次的な見出しは無視されます。
 </p>
 </div>
 
@@ -210,23 +211,33 @@
 <div class="editor-pane">
 <div class="pane-label">HTML (Source)</div>
 <div class="static-code-display">
-&lt;footer&gt;
- &lt;address&gt;
-  著者: &lt;a href="mailto:author@example.com"&gt;山田 太郎&lt;/a&gt;.
-  &lt;br&gt;
-  最終更新: &lt;time datetime="2025-12-14"&gt;2025年12月14日&lt;/time&gt;
- &lt;/address&gt;
-&lt;/footer&gt;
+&lt;hgroup&gt;
+ &lt;h1&gt;HTML &lt;hgroup&gt; 要素のすべて&lt;/h1&gt;
+ &lt;p&gt;副題：より明確なドキュメント構造のために&lt;/p&gt;
+&lt;/hgroup&gt;
+
+&lt;br&gt;
+
+&lt;hgroup&gt;
+ &lt;h2&gt;セクションの主要見出し&lt;/h2&gt;
+ &lt;h3&gt;サブタイトルやキャッチフレーズ&lt;/h3&gt;
+&lt;/hgroup&gt;
 </div>
 </div>
 <div class="preview-pane">
 <div class="pane-label">Preview (Result)</div>
-<div class="static-preview">
-<footer style="font-style: italic;">
- 著者: <a href="mailto:author@example.com">山田 太郎</a>.
- <br>
- 最終更新: 2025年12月14日
-</footer>
+<div class="static-preview" style="font-family: var(--font-family-base);">
+<hgroup>
+ <h1>HTML &lt;hgroup&gt; 要素のすべて</h1>
+ <p>副題：より明確なドキュメント構造のために</p>
+</hgroup>
+
+<br>
+
+<hgroup>
+ <h2>セクションの主要見出し</h2>
+ <h3>サブタイトルやキャッチフレーズ</h3>
+</hgroup>
 </div>
 </div>
 </div>
@@ -247,7 +258,11 @@
 <tbody>
 <tr>
 <td><span class="attr-name">グローバル属性</span></td>
-<td>全てのHTML要素で利用可能な属性です（例: <code>class</code>, <code>id</code>, <code>lang</code>）。</td>
+<td>全てのHTML要素で使用できる属性です。（例: <span class="attr-name">id</span>, <span class="attr-name">class</span>, <span class="attr-name">lang</span>など）</td>
+</tr>
+<tr>
+<td>（固有属性なし）</td>
+<td><code>&lt;hgroup&gt;</code> 要素には、固有の属性はありません。</td>
 </tr>
 </tbody>
 </table>
@@ -259,43 +274,33 @@
 <h2>実用例</h2>
 </div>
 
-<p><strong>1. 記事の作者情報として使用する</strong></p>
+<p><strong>1. ブログ記事のタイトルと公開日（または著者）</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">hgroup</span>&gt;
+ &lt;<span class="code-tag">h1</span>&gt;最新ウェブ技術とHTML5の進化&lt;/<span class="code-tag">h1</span>&gt;
+ &lt;<span class="code-tag">p</span>&gt;公開日: <span class="code-tag">time</span> <span class="code-attr">datetime</span>=<span class="code-val">"2025-12-14"</span>&gt;2025年12月14日&lt;/<span class="code-tag">time</span>&gt;&lt;/<span class="code-tag">p</span>&gt;
+&lt;/<span class="code-tag">hgroup</span>&gt;
+</div>
+
+<p><strong>2. 映画のタイトルとサブタイトル</strong></p>
 <div class="code-block">
 &lt;<span class="code-tag">article</span>&gt;
- &lt;<span class="code-tag">h2</span>&gt;最新のWeb技術動向&lt;/<span class="code-tag">h2</span>&gt;
- &lt;<span class="code-tag">p</span>&gt;... 記事本文 ...&lt;/<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">footer</span>&gt;
-  &lt;<span class="code-tag">address</span>&gt;
-   この記事は &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"/authors/jsmith"</span>&gt;John Smith&lt;/<span class="code-tag">a</span>&gt; によって書かれました。
-   &lt;<span class="code-tag">br</span>&gt;
-   連絡先: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"mailto:j.smith@webdev.com"</span>&gt;j.smith@webdev.com&lt;/<span class="code-tag">a</span>&gt;
-  &lt;/<span class="code-tag">address</span>&gt;
- &lt;/<span class="code-tag">footer</span>&gt;
+ &lt;<span class="code-tag">hgroup</span>&gt;
+  &lt;<span class="code-tag">h2</span>&gt;未来都市の設計図&lt;/<span class="code-tag">h2</span>&gt;
+  &lt;<span class="code-tag">h3</span>&gt;〜テクノロジーがもたらす新たな生活〜&lt;/<span class="code-tag">h3</span>&gt;
+ &lt;/<span class="code-tag">hgroup</span>&gt;
+ &lt;<span class="code-tag">p</span>&gt;本文がここに続きます...&lt;/<span class="code-tag">p</span>&gt;
 &lt;/<span class="code-tag">article</span>&gt;
 </div>
 
-<p><strong>2. サイト全体のフッターで連絡先を示す</strong></p>
+<p><strong>3. ロゴとキャッチフレーズ</strong></p>
 <div class="code-block">
-&lt;<span class="code-tag">footer</span>&gt;
- &lt;<span class="code-tag">p</span>&gt;&copy; 2025 HTML要素 辞書&lt;/<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">address</span>&gt;
-  管理者連絡先: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"/contact-us/"</span>&gt;お問い合わせフォーム&lt;/<span class="code-tag">a</span>&gt;
-  &lt;<span class="code-tag">br</span>&gt;
-  電話番号: &lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"tel:0120-123-456"</span>&gt;0120-123-456&lt;/<span class="code-tag">a</span>&gt;
- &lt;/<span class="code-tag">address</span>&gt;
-&lt;/<span class="code-tag">footer</span>&gt;
-</div>
-
-<p><strong>3. 誤った使い方（物理的な住所のみを示す場合）</strong></p>
-<div class="code-block">
-<span class="code-comment">&lt;!-- &lt;address&gt;の誤った使用例 --&gt;</span>
-&lt;<span class="code-tag">section</span>&gt;
- &lt;<span class="code-tag">h3</span>&gt;店舗情報&lt;/<span class="code-tag">h3</span>&gt;
- &lt;<span class="code-tag">address</span>&gt;
-  〒100-0001 東京都千代田区千代田 1-1-1
- &lt;/<span class="code-tag">address</span>&gt;
-<span class="code-comment">&lt;!-- ⬆️ この場合、単なる &lt;p&gt; や &lt;div&gt; を使用し、構造化データでマークアップするのが適切です --&gt;</span>
-&lt;/<span class="code-tag">section</span>&gt;
+&lt;<span class="code-tag">header</span>&gt;
+ &lt;<span class="code-tag">hgroup</span>&gt;
+  &lt;<span class="code-tag">h1</span>&gt;企業名&lt;/<span class="code-tag">h1</span>&gt;
+  &lt;<span class="code-tag">p</span>&gt;キャッチフレーズ: 明日を創造するテクノロジー&lt;/<span class="code-tag">p</span>&gt;
+ &lt;/<span class="code-tag">hgroup</span>&gt;
+&lt;/<span class="code-tag">header</span>&gt;
 </div>
 </div>
 
@@ -308,16 +313,16 @@
 <div class="note">
 <span class="material-symbols-outlined">info</span>
 <div>
-<strong>セマンティクス（意味）の理解</strong><br>
-<code>&lt;address&gt;</code> 要素は、その内容（記事やドキュメント全体）の**所有者/作者/管理者**の連絡先を示すために使用されます。企業の物理的な住所や商品の配送先住所など、**文書の内容と関連のない連絡先**を示すためには使用しないでください。
+<strong>セマンティクス（意味付け）の明確化</strong><br>
+<code>&lt;hgroup&gt;</code> の主な目的は、文書のアウトラインにおいて、複数の見出しから主要な見出しを一つに絞り込むことです。これにより、スクリーンリーダーなどの支援技術や検索エンジンがドキュメント構造をより正確に理解できるようになります。
 </div>
 </div>
 
 <div class="note accessibility">
-<span class="material-symbols-outlined">visibility</span>
+<span class="material-symbols-outlined">accessibility_new</span>
 <div>
-<strong>ブラウザによる既定のスタイル</strong><br>
-多くのブラウザでは、<code>&lt;address&gt;</code> 要素の内容を既定で*斜体*（イタリック体）で表示します。このスタイルはCSSで上書きすることが可能です。
+<strong>使用できる要素</strong><br>
+<code>&lt;hgroup&gt;</code> の中には、**最低1つの <code>&lt;h1&gt;</code> から <code>&lt;h6&gt;</code> までの見出し要素を含める**必要があります。その他の要素（例: <code>&lt;p&gt;</code>, <code>&lt;span&gt;</code>）も、副題として意味的に適切であれば含めることができますが、それらはアウトラインには影響しません。
 </div>
 </div>
 </div>
@@ -334,7 +339,7 @@ gap:16px;">
 </div>
 
 <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-6151036058675874">
+    data-ad-client="ca-pub-6151036058675874">
 </amp-auto-ads>
 </body>
 </html>

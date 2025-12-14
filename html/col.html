@@ -5,19 +5,21 @@
 
 
 <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
+
+
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-<title>HTML &lt;acronym&gt; 要素リファレンス | 頭字語をマークアップするタグ（HTML5で廃止）</title>
-<meta name="description" content="HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。頭字語や略語の完全な記述を提供するために使用されます。HTML5では廃止され、&lt;abbr&gt;要素の使用が推奨されています。">
+<title>HTML &lt;col&gt; 要素リファレンス | テーブルの列のスタイル設定と属性を解説</title>
+<meta name="description" content="HTMLの&lt;col&gt;要素（カラム要素）の完全リファレンス。&lt;colgroup&gt;内で使用し、テーブルの列全体にスタイルや属性を適用する方法をコードサンプル付きで詳解します。">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-<meta property="og:title" content="HTML &lt;acronym&gt; 要素リファレンス | 頭字語をマークアップするタグ">
-<meta property="og:description" content="HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。頭字語や略語の完全な記述を提供するために使用されます。HTML5では廃止され、&lt;abbr&gt;要素の使用が推奨されています。">
+<meta property="og:title" content="HTML &lt;col&gt; 要素リファレンス | テーブルの列のスタイル設定を解説">
+<meta property="og:description" content="HTMLの&lt;col&gt;要素（カラム要素）の完全リファレンス。テーブルの列全体にスタイルや属性を適用する方法をコードサンプル付きで詳解します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://search3958.github.io/dictionary/html/acronym.html">
-<meta property="og:image" content="https://search3958.github.io/images/acronym-tag-ogp.png">
+<meta property="og:url" content="https://search3958.github.io/dictionary/html/col.html">
+<meta property="og:image" content="https://search3958.github.io/images/col-tag-ogp.png">
 <meta property="og:site_name" content="HTML要素 辞書">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -30,8 +32,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <style amp-custom>
- :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview acronym{border-bottom: 1px dotted var(--md-sys-color-on-background); cursor: help;}.static-preview abbr{border-bottom: 1px dotted var(--md-sys-color-on-background); cursor: help;}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview acronym{border-bottom: 1px dotted var(--md-sys-color-on-background); cursor: help;}.static-preview abbr{border-bottom: 1px dotted var(--md-sys-color-on-background); cursor: help;}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
-</style>
+ :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview table{width:100%;border-collapse:collapse;}.static-preview th, .static-preview td{border: 1px solid #ccc; padding: 8px; text-align: left;}.static-preview col.highlight{background-color: #f0f8ff;}.static-preview col.wide{width: 150px;}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
+ </style>
 </head>
 <body>
 
@@ -39,8 +41,8 @@
 {
  "@context": "https://schema.org",
  "@type": "TechArticle",
- "headline": "HTML &lt;acronym&gt; 要素リファレンス | 頭字語をマークアップするタグ（HTML5で廃止）",
- "image": "https://search3958.github.io/images/acronym-tag-hero.png",
+ "headline": "HTML &lt;col&gt; 要素リファレンス | テーブルの列のスタイル設定と属性を解説",
+ "image": "https://search3958.github.io/images/col-tag-hero.png",
  "author": {
 "@type": "Person",
 "name": "Search3958"
@@ -56,7 +58,7 @@
  "datePublished": "2025-12-14",
  "dateModified": "2025-12-14",
  "articleSection": ["HTML要素", "リファレンス"],
- "description": "HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。頭字語や略語の完全な記述を提供するために使用されます。HTML5では廃止され、&lt;abbr&gt;要素の使用が推奨されています。"
+ "description": "HTMLの&lt;col&gt;要素（カラム要素）の完全リファレンス。&lt;colgroup&gt;内で使用し、テーブルの列全体にスタイルや属性を適用する方法をコードサンプル付きで詳解します。"
 }
 </script>
 
@@ -67,7 +69,6 @@
 <ul>
 <li><a href="https://search3958.github.io/dictionary/html/a.html">&lt;a&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/abbr.html">&lt;abbr&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/acronym.html" class="current">&lt;acronym&gt;</a><span class="deprecated" style="font-size: 0.8rem; margin-left: 8px;"> (廃止)</span></li>
 <li><a href="https://search3958.github.io/dictionary/html/address.html">&lt;address&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/area.html">&lt;area&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/article.html">&lt;article&gt;</a></li>
@@ -85,7 +86,7 @@
 <li><a href="https://search3958.github.io/dictionary/html/caption.html">&lt;caption&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/cite.html">&lt;cite&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/code.html">&lt;code&gt;</a></li>
-<li><a href="https://search3958.github.io/dictionary/html/col.html">&lt;col&gt;</a></li>
+<li><a href="https://search3958.github.io/dictionary/html/col.html" class="current">&lt;col&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/colgroup.html">&lt;colgroup&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/data.html">&lt;data&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/datalist.html">&lt;datalist&gt;</a></li>
@@ -182,10 +183,10 @@
 <header>
 <span class="eyebrow">HTML要素 辞書 by Sentaro</span>
 <h1>
-&lt;acronym&gt;
+&lt;col&gt;
 </h1>
-<p style="font-size: 1.1rem; color: var(--md-sys-color-error);">
-**【廃止】** 頭字語（Acronym）要素。頭字語や略語であることを示します。
+<p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
+カラム（Column）要素。テーブルの列全体に対してスタイルや属性を定義するために使用されます。
 </p>
 </header>
 
@@ -195,8 +196,8 @@
 <h2>概要</h2>
 </div>
 <p>
-**`&lt;acronym&gt;` 要素（アクロニム要素）は、頭字語（略語として発音されるもの、例: NASA）を示すために使用されていました。**<br>
-この要素はHTML5で廃止され、代わりに**`<abbr>` 要素**を使用することが推奨されています。両方とも、`title` 属性を使用して完全な単語（説明）を提供します。
+<code>&lt;col&gt;</code> 要素は、テーブルの **`<colgroup>`** 要素内で使用され、表の列全体（または複数の列）に対して共通のスタイルや属性を適用するために使われます。<br>
+単体の列または `span` 属性で指定した連続する複数の列を表現します。
 </p>
 </div>
 
@@ -210,29 +211,45 @@
 <div class="editor-pane">
 <div class="pane-label">HTML (Source)</div>
 <div class="static-code-display">
-&lt;p&gt;
- &lt;acronym title="World Wide Web"&gt;WWW&lt;/acronym&gt; は、
- インターネット上で情報を共有するためのシステムです。
-&lt;/p&gt;
-
-&lt;p&gt;
- &lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt; は、
- 文書交換のためのファイル形式です。（推奨）
-&lt;/p&gt;
+&lt;<span class="code-tag">table</span>&gt;
+ &lt;<span class="code-tag">colgroup</span>&gt;
+  &lt;<span class="code-tag">col</span> <span class="code-attr">class</span>=<span class="code-val">"highlight"</span>&gt; &lt;<span class="code-comment">-- 1列目をハイライト --</span>&gt;
+  &lt;<span class="code-tag">col</span> <span class="code-attr">class</span>=<span class="code-val">"wide"</span>&gt;    &lt;<span class="code-comment">-- 2列目を広く --</span>&gt;
+  &lt;<span class="code-tag">col</span>&gt;
+ &lt;/<span class="code-tag">colgroup</span>&gt;
+ &lt;<span class="code-tag">tr</span>&gt;
+  &lt;<span class="code-tag">th</span>&gt;No.&lt;/<span class="code-tag">th</span>&gt;
+  &lt;<span class="code-tag">th</span>&gt;商品名&lt;/<span class="code-tag">th</span>&gt;
+  &lt;<span class="code-tag">th</span>&gt;価格&lt;/<span class="code-tag">th</span>&gt;
+ &lt;/<span class="code-tag">tr</span>&gt;
+ &lt;<span class="code-tag">tr</span>&gt;
+  &lt;<span class="code-tag">td</span>&gt;001&lt;/<span class="code-tag">td</span>&gt;
+  &lt;<span class="code-tag">td</span>&gt;りんご&lt;/<span class="code-tag">td</span>&gt;
+  &lt;<span class="code-tag">td</span>&gt;150円&lt;/<span class="code-tag">td</span>&gt;
+ &lt;/<span class="code-tag">tr</span>&gt;
+&lt;/<span class="code-tag">table</span>&gt;
 </div>
 </div>
 <div class="preview-pane">
 <div class="pane-label">Preview (Result)</div>
 <div class="static-preview">
-<p>
- <acronym title="World Wide Web">WWW</acronym> は、
- インターネット上で情報を共有するためのシステムです。
-</p>
-
-<p>
- <abbr title="Portable Document Format">PDF</abbr> は、
- 文書交換のためのファイル形式です。（推奨）
-</p>
+<table>
+ <colgroup>
+  <col class="highlight">
+  <col class="wide">
+  <col>
+ </colgroup>
+ <tr>
+  <th>No.</th>
+  <th>商品名</th>
+  <th>価格</th>
+ </tr>
+ <tr>
+  <td>001</td>
+  <td>りんご</td>
+  <td>150円</td>
+ </tr>
+</table>
 </div>
 </div>
 </div>
@@ -252,12 +269,20 @@
 </thead>
 <tbody>
 <tr>
-<td><span class="attr-name">title</span></td>
-<td>**必須とされていた**属性で、頭字語の完全な記述（フルスペル）を指定します。ブラウザによっては、マウスオーバー時にツールチップとして表示されます。</td>
+<td><span class="attr-name">span</span></td>
+<td>この `<col>` 要素がスタイルを適用する列の数（幅）を指定します。デフォルト値は `1` です。</td>
 </tr>
 <tr>
-<td>（グローバル属性）</td>
-<td>`id`, `class`, `style` などのグローバル属性は使用可能です。</td>
+<td><span class="attr-name">class</span></td>
+<td>列にCSSクラス名を割り当て、スタイルを一括で適用するために最もよく使用されます。</td>
+</tr>
+<tr>
+<td><span class="attr-name">style</span></td>
+<td>列に直接インラインスタイルを適用します。</td>
+</tr>
+<tr>
+<td><span class="attr-name">width</span> <span class="deprecated">(非推奨)</span></td>
+<td>列の幅を指定します。CSSを使用することが強く推奨されます。</td>
 </tr>
 </tbody>
 </table>
@@ -269,24 +294,31 @@
 <h2>実用例</h2>
 </div>
 
-<p><strong>1. 基本的な使用法（タイトル属性による説明）</strong></p>
+<p><strong>1. 複数の列に共通スタイルを適用（`span` 属性）</strong></p>
 <div class="code-block">
-&lt;<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">acronym</span> <span class="code-attr">title</span>=<span class="code-val">"HyperText Markup Language"</span>&gt;
- HTML
- &lt;/<span class="code-tag">acronym</span>&gt;
- の学習は重要です。
-&lt;/<span class="code-tag">p</span>&gt;
+&lt;<span class="code-tag">table</span>&gt;
+ &lt;<span class="code-tag">colgroup</span>&gt;
+  &lt;<span class="code-tag">col</span> <span class="code-attr">span</span>=<span class="code-val">"2"</span> <span class="code-attr">style</span>=<span class="code-val">"background-color: #f0f0f0;"</span>&gt; &lt;<span class="code-comment">-- 最初の2列に背景色を適用 --</span>&gt;
+  &lt;<span class="code-tag">col</span>&gt; &lt;<span class="code-comment">-- 3列目 --</span>&gt;
+ &lt;/<span class="code-tag">colgroup</span>&gt;
+ &lt;<span class="code-tag">tbody</span>&gt;...&lt;/<span class="code-tag">tbody</span>&gt;
+&lt;/<span class="code-tag">table</span>&gt;
 </div>
 
-<p><strong>2. 廃止後の推奨される代替案（`&lt;abbr&gt;` 要素）</strong></p>
+<p><strong>2. CSSクラスによる列幅の指定</strong></p>
 <div class="code-block">
-&lt;<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"Cascading Style Sheets"</span>&gt;
- CSS
- &lt;/<span class="code-tag">abbr</span>&gt;
- はウェブデザインに不可欠です。
-&lt;/<span class="code-tag">p</span>&gt;
+<span class="code-comment">&lt;!-- CSS --&gt;</span>
+<span class="code-tag">.date-col</span> { <span class="code-attr">width</span>: <span class="code-val">120px</span>; }
+
+<span class="code-comment">&lt;!-- HTML --&gt;</span>
+&lt;<span class="code-tag">table</span>&gt;
+ &lt;<span class="code-tag">colgroup</span>&gt;
+  &lt;<span class="code-tag">col</span>&gt;           &lt;<span class="code-comment">-- 1列目 (デフォルト幅) --</span>&gt;
+  &lt;<span class="code-tag">col</span> <span class="code-attr">class</span>=<span class="code-val">"date-col"</span>&gt; &lt;<span class="code-comment">-- 2列目 (日付) --</span>&gt;
+  &lt;<span class="code-tag">col</span> <span class="code-attr">class</span>=<span class="code-val">"date-col"</span>&gt; &lt;<span class="code-comment">-- 3列目 (日付) --</span>&gt;
+ &lt;/<span class="code-tag">colgroup</span>&gt;
+ &lt;<span class="code-tag">tbody</span>&gt;...&lt;/<span class="code-tag">tbody</span>&gt;
+&lt;/<span class="code-tag">table</span>&gt;
 </div>
 </div>
 
@@ -297,18 +329,18 @@
 </div>
 
 <div class="note">
-<span class="material-symbols-outlined">warning</span>
+<span class="material-symbols-outlined">info</span>
 <div>
-**HTML5での廃止**<br>
-**`&lt;acronym&gt;` 要素はHTML5で廃止されました。** 略語（Abbreviation）と頭字語（Acronym）の区別は混乱を招きやすかったため、現在ではどちらの用途でも**`&lt;abbr&gt;` 要素**を使用することが正式に推奨されています。
+<strong>`&lt;colgroup&gt;` 要素内でのみ有効</strong><br>
+`<col>` 要素は、必ず **`&lt;table&gt;` 要素の直下**、かつ **`&lt;colgroup&gt;` 要素の中**に記述する必要があります。`<thead>` や `<tbody>` よりも前に配置されます。
 </div>
 </div>
 
 <div class="note accessibility">
 <span class="material-symbols-outlined">accessibility_new</span>
 <div>
-**アクセシビリティ（スクリーンリーダー対応）**<br>
-`title` 属性を設定することで、視覚的な情報がなくても、スクリーンリーダーなどの支援技術が完全な記述を読み上げることができます。これは、読者や検索エンジンに対して、その略語が何を意味するのかを明確に伝えるために重要です。
+<strong>アクセシビリティ上の注意</strong><br>
+`<col>` 要素は主に視覚的なスタイル（幅、背景色など）を適用するために使われます。スクリーンリーダーなどの支援技術は、列のセマンティクス（意味）を理解するために `<th>` 要素の `scope` 属性や適切なテーブル構造を参照します。`<col>` は構造的な意味づけには使えません。
 </div>
 </div>
 </div>
@@ -325,7 +357,7 @@ gap:16px;">
 </div>
 
 <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-6151036058675874">
+    data-ad-client="ca-pub-6151036058675874">
 </amp-auto-ads>
 </body>
 </html>

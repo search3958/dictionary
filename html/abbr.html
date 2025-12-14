@@ -2,17 +2,22 @@
 <html ⚡ lang="ja">
 <head>
 <meta charset="UTF-8">
+
+
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-<title>HTML &lt;abbr&gt; 要素リファレンス | 略語(Abbreviation)タグの使い方、属性(title)を解説</title>
-<meta name="description" content="HTMLの&lt;abbr&gt; (略語) 要素の完全リファレンス。略語や頭字語の完全な説明を提供するtitle属性の正しい使い方をコードサンプル付きで詳解します。">
+<title>HTML &lt;acronym&gt; 要素リファレンス | 廃止された略語タグ、代替としての&lt;abbr&gt;を解説</title>
+<meta name="description" content="HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。この要素はHTML5で廃止されました。代わりに推奨される&lt;abbr&gt; 要素の使い方をコードサンプル付きで詳解します。">
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-<meta property="og:title" content="HTML &lt;abbr&gt; 要素リファレンス | 略語(Abbreviation)タグの使い方、属性を解説">
-<meta property="og:description" content="HTMLの&lt;abbr&gt; (略語) 要素の完全リファレンス。略語や頭字語の完全な説明を提供するtitle属性の正しい使い方をコードサンプル付きで詳解します。">
+<meta property="og:title" content="HTML &lt;acronym&gt; 要素リファレンス | 廃止された略語タグ、代替としての&lt;abbr&gt;を解説">
+<meta property="og:description" content="HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。この要素はHTML5で廃止されました。代わりに推奨される&lt;abbr&gt; 要素の使い方をコードサンプル付きで詳解します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://search3958.github.io/dictionary/html/abbr.html">
-<meta property="og:image" content="https://search3958.github.io/images/abbr-tag-ogp.png">
+<meta property="og:url" content="https://search3958.github.io/dictionary/html/acronym.html">
+<meta property="og:image" content="https://search3958.github.io/images/acronym-tag-ogp.png">
 <meta property="og:site_name" content="HTML要素 辞書">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -34,8 +39,8 @@
 {
  "@context": "https://schema.org",
  "@type": "TechArticle",
- "headline": "HTML &lt;abbr&gt; 要素リファレンス | 略語(Abbreviation)タグの使い方、属性(title)を解説",
- "image": "https://search3958.github.io/images/abbr-tag-hero.png",
+ "headline": "HTML &lt;acronym&gt; 要素リファレンス | 廃止された略語タグ、代替としての&lt;abbr&gt;を解説",
+ "image": "https://search3958.github.io/images/acronym-tag-hero.png",
  "author": {
 "@type": "Person",
 "name": "Search3958"
@@ -51,14 +56,14 @@
  "datePublished": "2025-12-14",
  "dateModified": "2025-12-14",
  "articleSection": ["HTML要素", "リファレンス"],
- "description": "HTMLの&lt;abbr&gt; (略語) 要素の完全リファレンス。略語や頭字語の完全な説明を提供するtitle属性の正しい使い方をコードサンプル付きで詳解します。"
+ "description": "HTMLの&lt;acronym&gt; (アクロニム) 要素の完全リファレンス。この要素はHTML5で廃止されました。代わりに推奨される&lt;abbr&gt; 要素の使い方をコードサンプル付きで詳解します。"
 }
 </script>
 
 <div class="main-content-wrapper">
 
 <aside class="sidebar">
-<h3 style="margin-top:0;">HTML要素一覧</h3>
+<h3>HTML要素一覧</h3>
 <ul>
 <li><a href="https://search3958.github.io/dictionary/html/a.html">&lt;a&gt;</a></li>
 <li><a href="https://search3958.github.io/dictionary/html/abbr.html" class="current">&lt;abbr&gt;</a></li>
@@ -172,14 +177,15 @@
 
 <div class="container">
 
-<a class="last-a" href="https://search3958.gitub.io">辞書ホームへ</a>
+<a class="last-a" href="https://search3958.github.io/dictionary/html/">HTML辞書ホームへ</a>
 <header>
-<span class="eyebrow">HTML要素 辞書</span>
+<span class="eyebrow">HTML要素 辞書 by Sentaro</span>
 <h1>
-&lt;abbr&gt;
+&lt;acronym&gt;
+<span class="material-symbols-outlined">delete_forever</span>
 </h1>
-<p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
-略語（Abbreviation）要素。略語や頭字語（頭文字語）をマークアップするために使用します。
+<p style="font-size: 1.1rem; color: var(--md-sys-color-error);">
+**廃止**された要素。頭文字語（アクロニム）をマークアップするために使用されていましたが、HTML5では廃止されました。
 </p>
 </header>
 
@@ -189,15 +195,15 @@
 <h2>概要</h2>
 </div>
 <p>
-<code>&lt;abbr&gt;</code> 要素は、略語や頭字語（例: $\text{HTML}$, $\text{CSS}$, $\text{NASA}$）を定義するために使用されます。この要素の最も重要な用途は、オプションの $\text{title}$ 属性を使用して、略語の完全な説明（フルスペル）を提供することです。<br>
-これにより、検索エンジン、支援技術（スクリーンリーダー）、そしてマウスオーバーした一般ユーザーに対して、その略語の意味を明確に伝えることができます。
+<code>&lt;acronym&gt;</code> 要素は、かつて頭文字語（例: NASA、JAXA）を示すために使用されていました。しかし、HTML5では**廃止**され、略語（abbreviation）と頭文字語（acronym）を区別する必要はないという理由から、代わりに <a href="https://search3958.github.io/dictionary/html/abbr.html"><code>&lt;abbr&gt;</code></a> 要素を使用することが推奨されています。<br>
+この要素を現在のWeb開発で使用することは避けるべきです。
 </p>
 </div>
 
 <div class="card">
 <div class="section-header">
 <span class="material-symbols-outlined">play_circle</span>
-<h2>デモ (静的表示)</h2>
+<h2>デモ (静的表示 - 非推奨の書き方)</h2>
 </div>
 
 <div class="demo-container">
@@ -205,35 +211,36 @@
 <div class="pane-label">HTML (Source)</div>
 <div class="static-code-display">
 &lt;p&gt;
- ウェブ開発の勉強は、&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;から始めましょう。
+ &lt;acronym title="World Wide Web"&gt;
+  WWW
+ &lt;/acronym&gt;は...
 &lt;/p&gt;
 
 &lt;br&gt;
 
 &lt;p&gt;
- &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;は世界保健機関の略です。
+ &lt;acronym title="Cascading Style Sheets"&gt;
+  CSS
+ &lt;/acronym&gt;は...
 &lt;/p&gt;
 </div>
 </div>
 <div class="preview-pane">
-<div class="pane-label">Preview (Result)</div>
+<div class="pane-label">Preview (Result - 現在のブラウザではabbrと同一挙動)</div>
 <div class="static-preview">
 <p>
- ウェブ開発の勉強は、<abbr title="HyperText Markup Language" style="text-decoration: underline dotted;">HTML</abbr>から始めましょう。
+ <abbr title="World Wide Web" style="border-bottom: 1px dotted;">
+  WWW
+ </abbr>は...
 </p>
 
 <br>
 
 <p>
- <abbr title="World Health Organization" style="text-decoration: underline dotted;">WHO</abbr>は世界保健機関の略です。
+ <abbr title="Cascading Style Sheets" style="border-bottom: 1px dotted;">
+  CSS
+ </abbr>は...
 </p>
-<style>
-/* プレビュー用のスタイル（本来はCSSで定義） */
-.static-preview abbr {
-    text-decoration: underline dotted;
-    cursor: help;
-}
-</style>
 </div>
 </div>
 </div>
@@ -254,15 +261,11 @@
 <tbody>
 <tr>
 <td><span class="attr-name">title</span></td>
-<td><strong>略語の完全な説明（フルスペル）</strong>を指定します。この属性が最も重要で、ユーザーがマウスオーバーしたり、支援技術が読み上げたりする際に使用されます。</td>
+<td>**必須** (かつて) 略語の完全な名称を指定します。ブラウザによってはツールチップとして表示されます。廃止された現在でも、この属性の利用は<a href="https://search3958.github.io/dictionary/html/abbr.html"><code>&lt;abbr&gt;</code></a>要素で推奨されます。</td>
 </tr>
 <tr>
-<td><span class="attr-name">class</span></td>
-<td>要素にクラス名を割り当て、$\text{CSS}$ や $\text{JavaScript}$ での操作を可能にします。（グローバル属性）</td>
-</tr>
-<tr>
-<td><span class="attr-name">lang</span></td>
-<td>要素の内容の言語コードを指定します。（グローバル属性）</td>
+<td><span class="attr-name">Global Attributes</span></td>
+<td>その他のグローバル属性（<code>id</code>, <code>class</code>, <code>lang</code>など）は使用可能です。</td>
 </tr>
 </tbody>
 </table>
@@ -271,32 +274,33 @@
 <div class="card">
 <div class="section-header">
 <span class="material-symbols-outlined">code</span>
-<h2>実用例</h2>
+<h2>実用例 (代替要素 &lt;abbr&gt; の使用例)</h2>
 </div>
 
-<p><strong>1. 基本的な使用法（title属性でフルスペルを提供）</strong></p>
+<p><strong>1. 正しい略語のマークアップ（&lt;abbr&gt;を使用）</strong></p>
 <div class="code-block">
 &lt;<span class="code-tag">p</span>&gt;
- 国連は&lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"United Nations"</span>&gt;UN&lt;/<span class="code-tag">abbr</span>&gt;の略です。
-&lt;/<span class="code-tag">p</span>&gt;
-</div>
-
-<p><strong>2. 複数箇所で同じ略語を使用する場合</strong></p>
-<div class="code-block">
-<span class="code-comment">&lt;!-- 慣習として、文書内で最初に出現したときのみtitle属性を付けても良い --&gt;</span>
-&lt;<span class="code-tag">p</span>&gt;
- 私の仕事は&lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"Portable Document Format"</span>&gt;PDF&lt;/<span class="code-tag">abbr</span>&gt;ファイルの作成です。
-&lt;/<span class="code-tag">p</span>&gt;
-&lt;<span class="code-tag">p</span>&gt;
- この機能は&lt;<span class="code-tag">abbr</span>&gt;PDF&lt;/<span class="code-tag">abbr</span>&gt;ビューアで確認できます。
+ &lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"HyperText Markup Language"</span>&gt;
+  HTML
+ &lt;/<span class="code-tag">abbr</span>&gt;の要素を学びましょう。
 &lt;/<span class="code-tag">p</span>&gt;
 </div>
 
-<p><strong>3. 言語コードを指定する例</strong></p>
+<p><strong>2. 複数回出現する場合の適切なマークアップ</strong></p>
 <div class="code-block">
 &lt;<span class="code-tag">p</span>&gt;
- &lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"Deutsche Bahn"</span> <span class="code-attr">lang</span>=<span class="code-val">"de"</span>&gt;DB&lt;/<span class="code-tag">abbr</span>&gt;はドイツ鉄道のことです。
+ &lt;<span class="code-tag">abbr</span> <span class="code-attr">title</span>=<span class="code-val">"Unidentified Flying Object"</span>&gt;UFO&lt;/<span class="code-tag">abbr</span>&gt;の目撃情報は...
 &lt;/<span class="code-tag">p</span>&gt;
+<span class="code-comment">&lt;!-- 2回目以降はtitleを省略しても良い --&gt;</span>
+&lt;<span class="code-tag">p</span>&gt;
+ 彼は&lt;<span class="code-tag">abbr</span>&gt;UFO&lt;/<span class="code-tag">abbr</span>&gt;の調査を続けている。
+&lt;/<span class="code-tag">p</span>&gt;
+</div>
+
+<p><strong>3. 廃止された &lt;acronym&gt; の例 (非推奨)</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">acronym</span> <span class="code-attr">title</span>=<span class="code-val">"As Soon As Possible"</span>&gt;ASAP&lt;/<span class="code-tag">acronym</span>&gt;
+<span class="code-comment">&lt;!-- この書き方は現在非推奨です --&gt;</span>
 </div>
 </div>
 
@@ -307,10 +311,10 @@
 </div>
 
 <div class="note">
-<span class="material-symbols-outlined">description</span>
+<span class="material-symbols-outlined">warning</span>
 <div>
-<strong>要素の目的</strong><br>
-$\text{<abbr>}$ は、略語を視覚的に装飾するためではなく、その略語を<strong>意味的にマークアップ</strong>するために存在します。デフォルトでは、ブラウザは下線付きの点線（dotted underline）と、マウスオーバー時のツールチップ（$\text{title}$ の内容）を表示することが多いです。
+<strong>廃止された要素</strong><br>
+<code>&lt;acronym&gt;</code> 要素はHTML5で完全に廃止されました。古いブラウザとの互換性のために認識される場合もありますが、新しいプロジェクトや既存のコードの修正では、必ず <a href="https://search3958.github.io/dictionary/html/abbr.html"><code>&lt;abbr&gt;</code></a> 要素に置き換えてください。
 </div>
 </div>
 
@@ -318,7 +322,7 @@ $\text{<abbr>}$ は、略語を視覚的に装飾するためではなく、そ�
 <span class="material-symbols-outlined">accessibility_new</span>
 <div>
 <strong>アクセシビリティ</strong><br>
-$\text{title}$ 属性を指定することで、スクリーンリーダーなどの支援技術が略語を完全な単語として読み上げることが可能になり、視覚障碍者を含むすべてのユーザーの理解度が向上します。これは非常に重要なアクセシビリティ上のメリットです。
+略語や頭文字語は、スクリーンリーダーのユーザーにとって理解が難しい場合があります。<code>title</code> 属性に完全な用語（例: <code>title="HyperText Markup Language"</code>）を設定することで、スクリーンリーダーがそれを読み上げ、ユーザーがその意味を理解できるようになります。
 </div>
 </div>
 </div>
@@ -334,5 +338,8 @@ gap:16px;">
 </div>
 </div>
 
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-6151036058675874">
+</amp-auto-ads>
 </body>
 </html>
