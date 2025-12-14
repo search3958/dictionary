@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML内容出力ツール (リアルタイム更新 & コピー機能)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea, input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        /* 出力エリアのスタイル */
+        #output-area {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid #28a745;
+            background-color: #e2f0e2;
+            white-space: pre-wrap; /* 改行を保持 */
+            font-family: 'Courier New', Courier, monospace;
+            /* クリック可能であることを示すカーソル */
+            cursor: pointer; 
+            transition: background-color 0.2s; /* ホバー時の変化を滑らかに */
+        }
+        /* ホバー時の視覚的なフィードバック */
+        #output-area:hover {
+            background-color: #d0edd0; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML内容出力ツール (リアルタイム更新 & コピー機能)</h1>
+
+    <p>入力内容を変更すると、自動で「出力結果」が更新されます。</p>
+    <p>**出力結果をクリックすると、内容がクリップボードにコピーされます。**</p>
+
+    <label for="textarea-input">テキストエリア（改行も反映されます）:</label><br>
+    <textarea id="textarea-input" oninput="generateOutput()" placeholder="テキストエリアの内容を入力"></textarea><br>
+
+    <label for="text-input">テキスト入力欄（1行）:</label><br>
+    <input type="text" id="text-input" oninput="generateOutput()" placeholder="テキスト入力の内容を入力"><br>
+
+    <h2>出力結果:</h2>
+    <div id="output-area" onclick="copyOutput()">
+        ここに結果が表示されます。入力すると自動で更新されます。
+    </div>
+
+    <script>
+        /**
+         * 入力内容に基づき出力文字列を生成し、表示を更新する
+         */
+        function generateOutput() {
+            // テキストエリアの内容を取得
+            const textareaContent = document.getElementById('textarea-input').value;
+
+            // テキスト入力欄の内容を取得
+            const textInputContent = document.getElementById('text-input').value;
+
+            // 指定された形式で文字列を構築
+            const outputString = 
+                `${textareaContent}\n\n` +
+                `このファイルですが，今はa要素の内容ですが，${textInputContent}要素ように内容を変えて欲しいです。seo部分とかも全て変えてください。タブバーも選択中のものを<a>から<${textInputContent}>に変えて欲しいです。CSSは一切変更せず(省略しないで)，HTMLの全体をください。`;
+
+            // 結果を出力エリアに表示
+            document.getElementById('output-area').textContent = outputString;
+        }
+        
+        /**
+         * 出力エリアの内容をクリップボードにコピーする
+         */
+        function copyOutput() {
+            // 出力エリアの内容を取得
+            const outputText = document.getElementById('output-area').textContent;
+
+            // クリップボードにテキストを書き込む
+            // navigator.clipboard.writeText() は、非同期かつ安全な方法でコピーを実行します
+            navigator.clipboard.writeText(outputText)
+                .then(() => {
+                    console.error('完了');
+                })
+                .catch(err => {
+                    // 失敗時のフィードバック (ブラウザのセキュリティ制限などで失敗する場合がある)
+                    console.error('クリップボードへのコピーに失敗しました:', err);
+                    alert('クリップボードへのコピーに失敗しました。お手数ですが手動でコピーしてください。');
+                });
+        }
+
+        // ページロード時に一度実行し、初期メッセージを反映
+        document.addEventListener('DOMContentLoaded', generateOutput);
+    </script>
+
+</body>
+</html>

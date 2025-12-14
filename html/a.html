@@ -1,1 +1,346 @@
+<!doctype html>
+<html ⚡ lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<title>HTML &lt;a&gt; 要素リファレンス | リンク(Anchor)タグの使い方、属性(href, target, rel)を解説</title>
+<meta name="description" content="HTMLの&lt;a&gt; (アンカー) 要素の完全リファレンス。必須属性href、別タブで開くtarget=&quot;_blank&quot;、セキュリティ対策のrel=&quot;noopener&quot;など、具体的な使い方をコードサンプル付きで詳解します。">
 
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<meta property="og:title" content="HTML &lt;a&gt; 要素リファレンス | リンク(Anchor)タグの使い方、属性を解説">
+<meta property="og:description" content="HTMLの&lt;a&gt; (アンカー) 要素の完全リファレンス。必須属性href、target=&quot;_blank&quot;、rel=&quot;noopener&quot;など、具体的な使い方をコードサンプル付きで詳解します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{LK}a.html">
+<meta property="og:image" content="https://search3958.github.io/images/a-tag-ogp.png">
+<meta property="og:site_name" content="HTML要素 辞書">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Google+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<style amp-custom>
+  :root{--md-sys-color-primary:#005AC1;--md-sys-color-on-primary:#FFFFFF;--md-sys-color-primary-container:#D8E2FF;--md-sys-color-on-primary-container:#001A41;--md-sys-color-secondary:#575E71;--md-sys-color-secondary-container:#DBE2F9;--md-sys-color-tertiary:#715573;--md-sys-color-tertiary-container:#FBD7FC;--md-sys-color-error:#BA1A1A;--md-sys-color-error-container:#FFDAD6;--md-sys-color-background:#f0f4f9;--md-sys-color-on-background:#1B1B1F;--md-sys-color-surface:#FEFBFF;--md-sys-color-surface-container:#ffffff;--md-sys-color-surface-container-high:#EDEDF4;--md-sys-color-outline:#74777F;--md-sys-color-outline-variant:#C4C6CF;--font-family-base:'Google Sans','Noto Sans JP',sans-serif;--font-family-code:'Consolas','Monaco',monospace}*{corner-shape:superellipse(1.6)}body{font-family:var(--font-family-base);background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background);margin:0;padding:20px;line-height:1.6;display:flex;justify-content:center}.main-content-wrapper{max-width:1200px;width:100%;display:grid;gap:24px}.container{display:flex;flex-direction:column;gap:24px}@media (min-width:960px){.main-content-wrapper{grid-template-columns:260px 1fr}}.sidebar{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px;overflow-y:auto;position:sticky;top:20px;height:calc(100vh - 88px)}.sidebar h3{font-size:1.1rem;font-weight:600;margin-top:20px;margin-bottom:8px;color:var(--md-sys-color-primary)}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{margin-bottom:2px}.sidebar a{display:block;padding:4px 12px;text-decoration:none;color:var(--md-sys-color-on-background);font-family:var(--font-family-code);font-size:0.9rem;border-radius:12px;transition:background-color 0.15s ease-in-out}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .deprecated{color:var(--md-sys-color-error);text-decoration:line-through;opacity:0.6}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container);font-weight:bold}.sidebar .current:hover{background-color:var(--md-sys-color-primary-container)}header{margin-bottom:16px}.eyebrow{font-size:0.9rem;font-weight:500;color:var(--md-sys-color-secondary);margin-bottom:4px;display:block}h1{font-size:3rem;margin:0;color:var(--md-sys-color-on-background);display:flex;align-items:center;gap:16px}h1 .material-symbols-outlined{font-size:3rem;color:var(--md-sys-color-primary)}.card{background-color:var(--md-sys-color-surface-container);border-radius:40px;padding:24px}.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:var(--md-sys-color-primary)}.section-header h2{font-size:1.5rem;margin:0;font-weight:500}.demo-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;background-color:var(--md-sys-color-surface);border:1px solid var(--md-sys-color-outline-variant);border-radius:16px;overflow:hidden}@media (max-width:600px){.demo-container{grid-template-columns:1fr}}.editor-pane,.preview-pane{display:flex;flex-direction:column}.pane-label{background-color:var(--md-sys-color-secondary-container);color:var(--md-sys-color-on-primary-container);padding:8px 16px;font-size:0.85rem;font-weight:600}.static-code-display{width:100%;height:150px;padding:16px;font-family:var(--font-family-code);font-size:0.9rem;background-color:#f8f9fa;box-sizing:border-box;overflow:auto;white-space:pre-wrap}.static-preview{width:100%;height:150px;padding:16px;background-color:white;box-sizing:border-box;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary);text-decoration:underline}.static-preview .button-link{background:#005AC1;color:white;padding:8px 16px;text-decoration:none;border-radius:20px;display:inline-block}table{width:100%;border-collapse:collapse;font-size:0.95rem}th{text-align:left;padding:12px 16px;border-bottom:2px solid var(--md-sys-color-outline-variant);color:var(--md-sys-color-secondary);font-weight:600}td{padding:12px 16px;border-bottom:1px solid var(--md-sys-color-outline-variant);vertical-align:top}tr:last-child td{border-bottom:none}.attr-name{font-family:var(--font-family-code);color:var(--md-sys-color-primary);font-weight:600;background-color:var(--md-sys-color-primary-container);padding:2px 6px;border-radius:4px;font-size:0.85rem}.code-block{background-color:#1f2021;color:#abb2bf;padding:16px;border-radius:12px;font-family:var(--font-family-code);overflow-x:auto;margin-bottom:12px;white-space:pre-wrap}.code-comment{color:#98c379}.code-tag{color:#e06c75}.code-attr{color:#d19a66}.code-val{color:#98c379}.note{background-color:var(--md-sys-color-tertiary-container);color:#2D182F;padding:16px;border-radius:12px;margin-top:12px;display:flex;gap:12px;align-items:start}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#E1EDFD;color:#001A41}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}.last-a{color:var(--md-sys-color-secondary);font-size:1em}@media (max-width:960px){.sidebar{display:none}.main-content-wrapper{grid-template-columns:1fr}body{padding:16px}.card{border-radius:24px}h1{font-size:2.5rem}}@media (prefers-color-scheme:dark){:root{--md-sys-color-primary:#A8C7FF;--md-sys-color-on-primary:#002E66;--md-sys-color-primary-container:#264379;--md-sys-color-on-primary-container:#D8E2FF;--md-sys-color-secondary:#C0C6DC;--md-sys-color-secondary-container:#3F485B;--md-sys-color-tertiary:#DEBCDF;--md-sys-color-tertiary-container:#573E59;--md-sys-color-error:#FFB4AB;--md-sys-color-error-container:#93000A;--md-sys-color-background:#1B1B1F;--md-sys-color-on-background:#E4E2E6;--md-sys-color-surface:#1B1B1F;--md-sys-color-surface-container:#25282D;--md-sys-color-surface-container-high:#303338;--md-sys-color-outline:#8E9199;--md-sys-color-outline-variant:#44474E}body{background-color:var(--md-sys-color-background);color:var(--md-sys-color-on-background)}.sidebar{background-color:var(--md-sys-color-surface-container)}.sidebar a{color:var(--md-sys-color-on-background)}.sidebar a:hover{background-color:var(--md-sys-color-secondary-container)}.sidebar .current{background-color:var(--md-sys-color-primary-container);color:var(--md-sys-color-on-primary-container)}.static-code-display{background-color:#1f2021;color:#abb2bf}.static-preview{background-color:#2D2F31;border-left:1px solid var(--md-sys-color-outline-variant)}.static-preview a{color:var(--md-sys-color-primary)}.note{background-color:var(--md-sys-color-tertiary-container);color:#FBD7FC}.note .material-symbols-outlined{color:var(--md-sys-color-tertiary)}.note.accessibility{background-color:#264379;color:#D8E2FF}.note.accessibility .material-symbols-outlined{color:var(--md-sys-color-primary)}}
+   </style>
+</head>
+<body>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "HTML &lt;a&gt; 要素リファレンス | リンク(Anchor)タグの使い方、属性(href, target, rel)を解説",
+  "image": "https://search3958.github.io/images/a-tag-hero.png",
+  "author": {
+"@type": "Person",
+"name": "Search3958"
+  },
+  "publisher": {
+"@type": "Organization",
+"name": "HTML要素 辞書",
+"logo": {
+  "@type": "ImageObject",
+  "url": "https://search3958.github.io/icons/search3958.svg"
+}
+  },
+  "datePublished": "2025-12-14", 
+  "dateModified": "2025-12-14", 
+  "articleSection": ["HTML要素", "リファレンス"],
+  "description": "HTMLの&lt;a&gt; (アンカー) 要素の完全リファレンス。必須属性href、別タブで開くtarget=&quot;_blank&quot;、セキュリティ対策のrel=&quot;noopener&quot;など、具体的な使い方をコードサンプル付きで詳解します。"
+}
+</script>
+
+<div class="main-content-wrapper">
+
+<aside class="sidebar">
+<h3 style="margin-top:0;">HTML要素一覧</h3>
+<ul>
+<li><a href="{LK}a.html" class="current">&lt;a&gt;</a></li>
+<li><a href="{LK}abbr.html">&lt;abbr&gt;</a></li>
+<li><a href="{LK}address.html">&lt;address&gt;</a></li>
+<li><a href="{LK}area.html">&lt;area&gt;</a></li>
+<li><a href="{LK}article.html">&lt;article&gt;</a></li>
+<li><a href="{LK}aside.html">&lt;aside&gt;</a></li>
+<li><a href="{LK}audio.html">&lt;audio&gt;</a></li>
+<li><a href="{LK}b.html">&lt;b&gt;</a></li>
+<li><a href="{LK}base.html">&lt;base&gt;</a></li>
+<li><a href="{LK}bdi.html">&lt;bdi&gt;</a></li>
+<li><a href="{LK}bdo.html">&lt;bdo&gt;</a></li>
+<li><a href="{LK}blockquote.html">&lt;blockquote&gt;</a></li>
+<li><a href="{LK}body.html">&lt;body&gt;</a></li>
+<li><a href="{LK}br.html">&lt;br&gt;</a></li>
+<li><a href="{LK}button.html">&lt;button&gt;</a></li>
+<li><a href="{LK}canvas.html">&lt;canvas&gt;</a></li>
+<li><a href="{LK}caption.html">&lt;caption&gt;</a></li>
+<li><a href="{LK}cite.html">&lt;cite&gt;</a></li>
+<li><a href="{LK}code.html">&lt;code&gt;</a></li>
+<li><a href="{LK}col.html">&lt;col&gt;</a></li>
+<li><a href="{LK}colgroup.html">&lt;colgroup&gt;</a></li>
+<li><a href="{LK}data.html">&lt;data&gt;</a></li>
+<li><a href="{LK}datalist.html">&lt;datalist&gt;</a></li>
+<li><a href="{LK}dd.html">&lt;dd&gt;</a></li>
+<li><a href="{LK}del.html">&lt;del&gt;</a></li>
+<li><a href="{LK}details.html">&lt;details&gt;</a></li>
+<li><a href="{LK}dfn.html">&lt;dfn&gt;</a></li>
+<li><a href="{LK}dialog.html">&lt;dialog&gt;</a></li>
+<li><a href="{LK}div.html">&lt;div&gt;</a></li>
+<li><a href="{LK}dl.html">&lt;dl&gt;</a></li>
+<li><a href="{LK}dt.html">&lt;dt&gt;</a></li>
+<li><a href="{LK}em.html">&lt;em&gt;</a></li>
+<li><a href="{LK}embed.html">&lt;embed&gt;</a></li>
+<li><a href="{LK}fieldset.html">&lt;fieldset&gt;</a></li>
+<li><a href="{LK}figcaption.html">&lt;figcaption&gt;</a></li>
+<li><a href="{LK}figure.html">&lt;figure&gt;</a></li>
+<li><a href="{LK}footer.html">&lt;footer&gt;</a></li>
+<li><a href="{LK}form.html">&lt;form&gt;</a></li>
+<li><a href="{LK}h1.html">&lt;h1&gt;</a></li>
+<li><a href="{LK}head.html">&lt;head&gt;</a></li>
+<li><a href="{LK}header.html">&lt;header&gt;</a></li>
+<li><a href="{LK}hgroup.html">&lt;hgroup&gt;</a></li>
+<li><a href="{LK}hr.html">&lt;hr&gt;</a></li>
+<li><a href="{LK}html.html">&lt;html&gt;</a></li>
+<li><a href="{LK}i.html">&lt;i&gt;</a></li>
+<li><a href="{LK}iframe.html">&lt;iframe&gt;</a></li>
+<li><a href="{LK}img.html">&lt;img&gt;</a></li>
+<li><a href="{LK}input.html">&lt;input&gt;</a></li>
+<li><a href="{LK}ins.html">&lt;ins&gt;</a></li>
+<li><a href="{LK}kbd.html">&lt;kbd&gt;</a></li>
+<li><a href="{LK}label.html">&lt;label&gt;</a></li>
+<li><a href="{LK}legend.html">&lt;legend&gt;</a></li>
+<li><a href="{LK}li.html">&lt;li&gt;</a></li>
+<li><a href="{LK}link.html">&lt;link&gt;</a></li>
+<li><a href="{LK}main.html">&lt;main&gt;</a></li>
+<li><a href="{LK}map.html">&lt;map&gt;</a></li>
+<li><a href="{LK}mark.html">&lt;mark&gt;</a></li>
+<li><a href="{LK}menu.html">&lt;menu&gt;</a></li>
+<li><a href="{LK}meta.html">&lt;meta&gt;</a></li>
+<li><a href="{LK}meter.html">&lt;meter&gt;</a></li>
+<li><a href="{LK}nav.html">&lt;nav&gt;</a></li>
+<li><a href="{LK}noscript.html">&lt;noscript&gt;</a></li>
+<li><a href="{LK}object.html">&lt;object&gt;</a></li>
+<li><a href="{LK}ol.html">&lt;ol&gt;</a></li>
+<li><a href="{LK}optgroup.html">&lt;optgroup&gt;</a></li>
+<li><a href="{LK}option.html">&lt;option&gt;</a></li>
+<li><a href="{LK}output.html">&lt;output&gt;</a></li>
+<li><a href="{LK}p.html">&lt;p&gt;</a></li>
+<li><a href="{LK}picture.html">&lt;picture&gt;</a></li>
+<li><a href="{LK}pre.html">&lt;pre&gt;</a></li>
+<li><a href="{LK}progress.html">&lt;progress&gt;</a></li>
+<li><a href="{LK}q.html">&lt;q&gt;</a></li>
+<li><a href="{LK}rp.html">&lt;rp&gt;</a></li>
+<li><a href="{LK}rt.html">&lt;rt&gt;</a></li>
+<li><a href="{LK}ruby.html">&lt;ruby&gt;</a></li>
+<li><a href="{LK}s.html">&lt;s&gt;</a></li>
+<li><a href="{LK}samp.html">&lt;samp&gt;</a></li>
+<li><a href="{LK}script.html">&lt;script&gt;</a></li>
+<li><a href="{LK}search.html">&lt;search&gt;</a></li>
+<li><a href="{LK}section.html">&lt;section&gt;</a></li>
+<li><a href="{LK}select.html">&lt;select&gt;</a></li>
+<li><a href="{LK}slot.html">&lt;slot&gt;</a></li>
+<li><a href="{LK}small.html">&lt;small&gt;</a></li>
+<li><a href="{LK}source.html">&lt;source&gt;</a></li>
+<li><a href="{LK}span.html">&lt;span&gt;</a></li>
+<li><a href="{LK}strong.html">&lt;strong&gt;</a></li>
+<li><a href="{LK}style.html">&lt;style&gt;</a></li>
+<li><a href="{LK}sub.html">&lt;sub&gt;</a></li>
+<li><a href="{LK}summary.html">&lt;summary&gt;</a></li>
+<li><a href="{LK}sup.html">&lt;sup&gt;</a></li>
+<li><a href="{LK}table.html">&lt;table&gt;</a></li>
+<li><a href="{LK}tbody.html">&lt;tbody&gt;</a></li>
+<li><a href="{LK}td.html">&lt;td&gt;</a></li>
+<li><a href="{LK}template.html">&lt;template&gt;</a></li>
+<li><a href="{LK}textarea.html">&lt;textarea&gt;</a></li>
+<li><a href="{LK}tfoot.html">&lt;tfoot&gt;</a></li>
+<li><a href="{LK}th.html">&lt;th&gt;</a></li>
+<li><a href="{LK}thead.html">&lt;thead&gt;</a></li>
+<li><a href="{LK}time.html">&lt;time&gt;</a></li>
+<li><a href="{LK}title.html">&lt;title&gt;</a></li>
+<li><a href="{LK}tr.html">&lt;tr&gt;</a></li>
+<li><a href="{LK}track.html">&lt;track&gt;</a></li>
+<li><a href="{LK}u.html">&lt;u&gt;</a></li>
+<li><a href="{LK}ul.html">&lt;ul&gt;</a></li>
+<li><a href="{LK}var.html">&lt;var&gt;</a></li>
+<li><a href="{LK}video.html">&lt;video&gt;</a></li>
+<li><a href="{LK}wbr.html">&lt;wbr&gt;</a></li>
+</ul>
+</aside>
+
+<div class="container">
+
+<a class="last-a" href="https://search3958.gitub.io">辞書ホームへ</a>
+<header>
+<span class="eyebrow">HTML要素 辞書</span>
+<h1>
+&lt;a&gt;
+</h1>
+<p style="font-size: 1.1rem; color: var(--md-sys-color-secondary);">
+アンカー（Anchor）要素。ハイパーリンクを作成するための基本的なHTML要素です。
+</p>
+</header>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">info</span>
+<h2>概要</h2>
+</div>
+<p>
+<code>&lt;a&gt;</code> 要素（アンカー要素）は、<code>href</code> 属性を用いることで、別のウェブページ、同じページ内の別の場所、ファイル、メールアドレス、電話番号などへのハイパーリンクを作成します。<br>
+Webの根幹をなす最も重要な要素の一つです。
+</p>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">play_circle</span>
+<h2>デモ (静的表示)</h2>
+</div>
+
+<div class="demo-container">
+<div class="editor-pane">
+<div class="pane-label">HTML (Source)</div>
+<div class="static-code-display">
+&lt;a href="https://search3958.github.io" target="_blank"&gt;
+  私について
+&lt;/a&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;a href="#" class="button-link"&gt;
+  ボタンスタイルのリンク
+&lt;/a&gt;
+</div>
+</div>
+<div class="preview-pane">
+<div class="pane-label">Preview (Result)</div>
+<div class="static-preview">
+<a href="https://search3958.github.io" target="_blank">
+  私について
+</a>
+
+<br><br>
+
+<a href="#" class="button-link">
+  ボタンスタイルのリンク
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">list</span>
+<h2>属性 (Attributes)</h2>
+</div>
+<table>
+<thead>
+<tr>
+<th style="width: 30%;">属性名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="attr-name">href</span></td>
+<td>リンク先のURL。絶対に指定すべき最も重要な属性です。URL、ID（#id）、mailto:、tel:などが指定可能です。</td>
+</tr>
+<tr>
+<td><span class="attr-name">target</span></td>
+<td>リンクをどこで開くかを指定します。<br>
+<code>_self</code>: 現在のタブ（デフォルト）<br>
+<code>_blank</code>: 新しいタブまたはウィンドウ
+</td>
+</tr>
+<tr>
+<td><span class="attr-name">download</span></td>
+<td>リンク先のURLへ移動するのではなく、ファイルをダウンロードするようにブラウザに指示します。値としてファイル名を指定することも可能です。</td>
+</tr>
+<tr>
+<td><span class="attr-name">rel</span></td>
+<td>リンク先ドキュメントとの関係性を示します。<br>
+例: <code>noopener</code>, <code>noreferrer</code>, <code>nofollow</code>
+</td>
+</tr>
+<tr>
+<td><span class="attr-name">hreflang</span></td>
+<td>リンク先リソースの言語コード（例: <code>ja</code>, <code>en</code>）を指定します。</td>
+</tr>
+<tr>
+<td><span class="attr-name">type</span></td>
+<td>リンク先リソースのMIMEタイプ（例: <code>application/pdf</code>）を示します。</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">code</span>
+<h2>実用例</h2>
+</div>
+
+<p><strong>1. 別タブで開くリンク（セキュリティ対策付き）</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"https://example.com"</span> <span class="code-attr">target</span>=<span class="code-val">"_blank"</span> <span class="code-attr">rel</span>=<span class="code-val">"noopener noreferrer"</span>&gt;
+  外部サイトを開く
+&lt;/<span class="code-tag">a</span>&gt;
+</div>
+
+<p><strong>2. メール送信と電話発信</strong></p>
+<div class="code-block">
+<span class="code-comment">&lt;!-- メールー --&gt;</span>
+&lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"mailto:info@example.com"</span>&gt;メールを送る&lt;/<span class="code-tag">a</span>&gt;
+
+<span class="code-comment">&lt;!-- 電話 --&gt;</span>
+&lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"tel:+819000000000"</span>&gt;090-0000-0000&lt;/<span class="code-tag">a</span>&gt;
+</div>
+
+<p><strong>3. ページ内リンク（アンカー）</strong></p>
+<div class="code-block">
+&lt;<span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-val">"#section2"</span>&gt;セクション2へジャンプ&lt;/<span class="code-tag">a</span>&gt;
+...
+&lt;<span class="code-tag">h2</span> <span class="code-attr">id</span>=<span class="code-val">"section2"</span>&gt;セクション2&lt;/<span class="code-tag">h2</span>&gt;
+</div>
+</div>
+
+<div class="card">
+<div class="section-header">
+<span class="material-symbols-outlined">lightbulb</span>
+<h2>知っておくべき重要事項</h2>
+</div>
+
+<div class="note">
+<span class="material-symbols-outlined">security</span>
+<div>
+<strong>セキュリティに関する注意 (target="_blank")</strong><br>
+<code>target="_blank"</code> を使用して新しいタブでページを開く場合、セキュリティとパフォーマンスのリスクがあります。必ず <code>rel="noopener"</code> （または <code>noreferrer</code>）を付与して、リンク先のページが元のページを操作できないようにしてください。
+</div>
+</div>
+
+<div class="note accessibility">
+<span class="material-symbols-outlined">accessibility_new</span>
+<div>
+<strong>アクセシビリティ</strong><br>
+「ここをクリック」のような曖昧なリンクテキストは避けましょう。「製品情報を見る」「お問い合わせページへ」のように、<strong>どこへ行くのかが具体的にわかるテキスト</strong>を設定することが推奨されます。
+</div>
+</div>
+</div>
+<div style="
+display: flex;
+align-items: center;
+gap:16px;">
+<img width="48px" src="https://search3958.github.io/icons/search3958.svg">
+<a class="last-a" href="https://search3958.gitub.io">私について</a>
+<a class="last-a" href="https://search3958.github.io/policies/trems">利用規約</a>
+<a class="last-a" href="https://search3958.github.io/policies/privacy">プライバシーポリシー</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
