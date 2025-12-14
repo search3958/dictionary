@@ -1,6 +1,8 @@
 <!doctype html>
 <html ⚡ lang="ja">
 <head>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org"></script>
+
 <meta charset="UTF-8">
 
 
@@ -34,6 +36,32 @@
 </style>
 </head>
 <body>
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+    {
+      "vars": {
+        "gtag_id": "G-7N56NHPY3C",
+        "config": {
+          "G-7N56NHPY3C": {
+            "groups": "default",
+            "send_page_view": true
+          }
+        }
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview",
+          "vars": {
+            "event_name": "page_view"
+          }
+        }
+      }
+    }
+  </script>
+</amp-analytics>
+
+
 
 <script type="application/ld+json">
 {

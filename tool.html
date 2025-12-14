@@ -42,6 +42,32 @@
     </style>
 </head>
 <body>
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+    {
+      "vars": {
+        "gtag_id": "G-7N56NHPY3C",
+        "config": {
+          "G-7N56NHPY3C": {
+            "groups": "default",
+            "send_page_view": true
+          }
+        }
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview",
+          "vars": {
+            "event_name": "page_view"
+          }
+        }
+      }
+    }
+  </script>
+</amp-analytics>
+
+
 
     <h1>HTML内容出力ツール (リアルタイム更新 & コピー機能)</h1>
 
