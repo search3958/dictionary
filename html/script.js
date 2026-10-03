@@ -45,8 +45,36 @@ function buildSidebar() {
   }).join("");
 }
 
+function setupSidebarToggle() {
+  const toggle = document.querySelector('.sidebar-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.querySelector('.sidebar-overlay');
+  if (!toggle || !sidebar || !overlay) return;
+
+  toggle.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    overlay.classList.add('open');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+  });
+
+  sidebar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('open');
+    });
+  });
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", buildSidebar);
+  document.addEventListener("DOMContentLoaded", () => {
+    buildSidebar();
+    setupSidebarToggle();
+  });
 } else {
   buildSidebar();
+  setupSidebarToggle();
 }
